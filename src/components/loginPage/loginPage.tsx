@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import "./loginPage.css";
 import { Alert } from "@mui/material";
-import ModalMessage from "../modalMessage/ModalMessage";
+import ModalMessage from "../modalMessage/modalMessage";
 
 const LoginPage = () => {
 
@@ -23,7 +23,7 @@ const LoginPage = () => {
 
     return (
         <div className="loginPage">
-            <ModalMessage message="Login or password is incorrect" isVisible={visibleErrorMessage} />
+            <ModalMessage message="Fill in all fields" isVisible={visibleErrorMessage} />
             <form onSubmit={(evt) => {evt.preventDefault()}} className="loginForm">
                 <input ref={loginRef} placeholder="Input your login" type="text" className="loginFormInput" />
                 <input ref={passwordRef} placeholder="Input your password" type="password" className="loginFormInput" />
