@@ -7,7 +7,8 @@ const LoginPage = () => {
 
     const loginRef:any = useRef('')
     const passwordRef:any = useRef('')
-    const [visibleErrorMessage, setVisibleErrorMessage] = useState<boolean>(false);
+    const [statusPage, setStatusPage] = useState<boolean>(false)
+    const [visibleErrorMessage, setVisibleErrorMessage] = useState<boolean>(false)
 
 
     const login = () => {
